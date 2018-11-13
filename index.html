@@ -1,102 +1,232 @@
-<!DOCTYPE html 
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
-<meta name="Description" content="XDD" />
-<meta name="Keywords" content="Julia Krzan" />
-<title>Strona o mnie</title>
-<link rel="Stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="top">
-	<div id="BODY">
-		<div id="LOGO"><!--LOGO-->Strona o mnie<!--/LOGO--></div>
-		<div id="LINKI">
-		<!--LINKI-->
-			<ul>
-			<li><a href="?">Link</a></li>
-			<li><a href="?">Link</a></li>
-			<li><a href="?">Link</a></li>
-			<li><a href="?">Link</a></li>
-			<li><a href="?">Link</a></li>
-			</ul>
-		<!--/LINKI-->
-		</div>
-		<div id="MENU">
-			<!--MENU-->
-			<div class="MENU">
-				<div class="NAGLOWEK" id="MENU_NAGLOWEK"><!--NAGLOWEK MENU-->Menu<!--/NAGLOWEK MENU--></div>
-				<div class="ZAWARTOSC">
-				<!--ZAWARTOSC MENU-->
-					<ul>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					<li><a href="?">Link</a></li>
-					</ul>
-				<!--/ZAWARTOSC MENU-->
-				</div>
-			</div>
-			<!--/MENU-->
-		</div>
-		<div id="TRESC">
-		<div class="ZAWARTOSC">
-		<!--TRESC-->
+/*STRONA*/
+body {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, cursive;
+	background-color: #FFFFFF;
+	background-image: url(background.gif);
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+a img {
+	border: 0;
+}
+/*/STRONA*/
 
-<h1>Instrukcja</h1>
-<p>To jest przykładowa treść strony... Aby ją zmienić, wczytaj ten plik (<kbd>index.html</kbd>) w edytorze (X)HTML, odszukaj w kodzie źródłowym strony wyrażenia:<br /><br />
-<code>&lt;!--TRESC--&gt;</code><br /><br />
-oraz<br /><br />
-<code>&lt;!--/TRESC--&gt;</code><br /><br />
-i umieść pomiędzy nimi własny tekst.</p>
-<p>Pomiędzy <code>&lt;!--LOGO--&gt;</code> a <code>&lt;!--/LOGO--&gt;</code> można wpisać tekst, który pojawi się na szczycie strony. Można tam wstawić obrazek logo:<br /><br />
-<code>&lt;img src="logo.jpg" alt="Strona o mnie"&nbsp;/&gt;</code></p>
-<p>Pomiędzy <code>&lt;!--LINKI--&gt;</code> a <code>&lt;!--/LINKI--&gt;</code> można wstawić powtórzoną nawigację, czyli najważniejsze linki w serwisie, do których powinien być ułatwiony dostęp. Do wpisywania linków użyj znaczników wykazu:<br /><br />
-<code>&lt;ul&gt;<br />
-&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
-&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
-&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
-&lt;/ul&gt;</code><br /><br />
-Oczywiście można tutaj równie dobrze wpisać zwykły tekst.</p>
-<p>Aby dodać dodatkowy blok menu, odszukaj w kodzie źródłowym fragment zawarty pomiędzy:<br /><br />
-<code>&lt;!--MENU--&gt;</code><br /><br />
-a<br /><br />
-<code>&lt;!--/MENU--&gt;</code><br /><br />
-i skopiuj go bezpośrednio poniżej.</p>
-<p>Możesz zmienić nagłówek menu, wpisjąc własny tekst pomiędzy <code>&lt;!--NAGLOWEK MENU--&gt;</code> a <code>&lt;!--/NAGLOWEK MENU--&gt;</code>.</p>
-<p>Możesz zmienić zawartosc bloku menu, wpisjąc własny tekst pomiędzy <code>&lt;!--ZAWARTOSC MENU--&gt;</code> a <code>&lt;!--/ZAWARTOSC MENU--&gt;</code>. Do wpisywania linków użyj znaczników wykazu:<br /><br />
-<code>&lt;ul&gt;<br />
-&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
-&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
-&lt;li&gt;&lt;a href="..."&gt;...&lt;/a&gt;&lt;/li&gt;<br />
-&lt;/ul&gt;</code></p>
-<h2>Grafika</h2>
-<p>Aby szablon stał się kompletny, należy przygotować w dowolnym programie graficznym dodatkowe obrazy, które będą stanowiły tło graficzne odpowiednich elementów strony i zapisać je w tym samym katalogu, co plik <kbd>style.css</kbd>:</p>
-<dl>
-<dt><kbd>background.gif</kbd></dt><dd>Ogólne tło dokumentu, widoczne w wyższych rozdzielczościach ekranu po bokach.</dd>
-</dl>
-<p><strong>UWAGA!</strong> W nazwach plików wielkość liter ma znaczenie, tzn. np.: <kbd>background.GIF</kbd> to nie jest to samo co <kbd>background.gif</kbd></p>
-<h2>Tworzenie podstron</h2>
-<p>Zasadniczo, aby utworzyć nową podstronę serwisu, trzeba skopiować cały ten dokument (<kbd>index.html</kbd>), zmienić w nim treść (zobacz początek tego opisu) i zapisać pod inną nazwą w pliku z rozszerzeniem <kbd>*.html</kbd> - np. <kbd><em>podstrona</em>.html</kbd>. Proces ten można uprościć budując szablon w języku skryptowym <acronym title="PHP Hypertext Preprocessor">PHP</acronym>. Jeśli nie znasz lub nie masz dostępu do tego rodzaju skryptów, możesz w miejsce treści w pliku <kbd>index.html</kbd> wstawić ramkę pływającą:<br /><br />
-<code>&lt;iframe name="p" src="<b>start.html</b>" width="100%" height="400" frameborder="0"&gt;&lt;/iframe&gt;</code><br /><br />
-(<b>start.html</b> to nazwa strony głównej z treścią - to nie jest <kbd>index.html</kbd>!), a do wszystkich linków z menu dodać atrybut:<br /><br />
-&lt;a <b>target="p"</b> href="strona.html"&gt;...&lt;/a&gt;<br /><br />
-Można również skorzystać ze skryptu opublikowanego w serwisie <a href="http://www.kurshtml.edu.pl">Kurs&nbsp;HTML</a> w rozdziale <cite>Skrypty/AutoIFRAME</cite>, który automatycznie dopasuje wysokość ramki pływającej do jej zawartości.</p><h2>Prawa autorskie</h2>
-<p>Możesz wykorzystać ten szablon to budowy dowolnej strony WWW - również komercyjnej. Oczywiście możesz się także podpisać, jako autor treści na niej zawartych.</p><p>Będzie mi bardzo miło, jeżeli wstawisz na swojej stronie banner, button lub chociaż link do serwisu <a href="http://www.kurshtml.edu.pl">Kurs HTML</a> (bannery i buttony znajdziesz w serwisie), ale nie jest to wymagane.</p>
+/*RAMKA*/
+#top {
+	background-color: #F0F0F0;
+	margin: 0 auto;
+	width: 770px;
+}
+/*/RAMKA*/
 
-		<!--/TRESC-->
-		</div>
-		</div>
-		<div id="STOPKA"><!--STOPKA-->&copy; Strona o mnie<!--/STOPKA--></div>
-	</div>
-</div>
-</body>
-</html>
+/*WNETRZE*/
+#BODY {
+	background-color: #E0E0E0;
+	text-align: left;
+	margin: 0 10px;
+	width: 750px;
+}
+/*/WNETRZE*/
+
+/*LOGO*/
+#LOGO {
+	font-size: 36px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: center;
+	font-weight: bold;
+}
+/*/LOGO*/
+
+/*LINKI*/
+#LINKI {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #808080;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	margin-left: 0px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	text-align: center;
+}
+#LINKI a:link {
+	color: #E0E0E0;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: normal;
+}
+#LINKI a:visited {
+	color: #E0E0E0;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: normal;
+}
+#LINKI a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-style: normal;
+}
+#LINKI ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#LINKI ul li {
+	display: inline;
+	list-style-type: none;
+	margin: 0 5px;
+	padding: 0;
+}
+/*/LINKI*/
+
+/*MENU*/
+#MENU {
+	width: 150px;
+	overflow: hidden;
+	float: left;
+}
+/*NAGLOWEK MENU*/
+#MENU .NAGLOWEK {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #808080;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+/*/NAGLOWEK MENU*/
+/*ZAWARTOSC MENU*/
+#MENU .ZAWARTOSC {
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
+#MENU .ZAWARTOSC a:link {
+	color: #000080;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#MENU .ZAWARTOSC a:visited {
+	color: #000080;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#MENU .ZAWARTOSC a:hover {
+	color: #0000FF;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#MENU .ZAWARTOSC ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#MENU .ZAWARTOSC ul li {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+/*/ZAWARTOSC MENU*/
+/*/MENU*/
+
+/*TRESC*/
+#TRESC {
+	width: 600px;
+	overflow: hidden;
+	float: left;
+}
+#TRESC .ZAWARTOSC {
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, fantasy;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+}
+#TRESC .ZAWARTOSC a:link {
+	color: #0000FF;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#TRESC .ZAWARTOSC a:visited {
+	color: #800080;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+#TRESC .ZAWARTOSC a:hover {
+	color: #FF0000;
+	text-decoration: underline;
+	font-weight: normal;
+	font-style: normal;
+}
+/*/TRESC*/
+
+/*STOPKA*/
+#STOPKA {
+	font-size: 11px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #808080;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	text-align: center;
+	clear: both;
+}
+#STOPKA a:link, #STOPKA a:visited {
+	color: #000000;
+	text-decoration: underline;
+}
+#STOPKA a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+/*/STOPKA*/
